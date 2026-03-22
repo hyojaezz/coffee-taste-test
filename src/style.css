@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f1eb;
+  color: #2f241f;
+}
+
+button {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 640px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.start-card,
+.result-card {
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+.sub-text {
+  line-height: 1.6;
+  color: #6a5a50;
+  margin-bottom: 24px;
+}
+
+.primary-btn {
+  background: #6f4e37;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 20px;
+  cursor: pointer;
+  min-width: 180px;
+}
+
+.primary-btn:hover {
+  opacity: 0.92;
+}
+
+.progress-wrap {
+  margin-bottom: 24px;
+}
+
+.progress-text {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #7b6a60;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #eadfd6;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #6f4e37;
+  transition: width 0.25s ease;
+}
+
+.question-title {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.options {
+  display: grid;
+  gap: 12px;
+}
+
+.option-btn {
+  width: 100%;
+  text-align: left;
+  padding: 16px;
+  border: 1px solid #ddd2ca;
+  border-radius: 14px;
+  background: #fffaf6;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option-btn:hover {
+  border-color: #6f4e37;
+  transform: translateY(-1px);
+}
+
+.result-label {
+  font-size: 14px;
+  color: #8a776a;
+  margin-bottom: 8px;
+}
+
+.result-desc {
+  line-height: 1.7;
+  color: #5e5048;
+  margin-bottom: 24px;
+}
+
+.result-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.info-box {
+  background: #f8f2ed;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.info-label {
+  display: block;
+  font-size: 13px;
+  color: #7d6d63;
+  margin-bottom: 6px;
+}
+
+.score-summary {
+  text-align: left;
+  background: #fcf8f4;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.score-summary ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.score-summary li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 24px;
+  }
+
+  .result-info {
+    grid-template-columns: 1fr;
+  }
+}
